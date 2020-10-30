@@ -6,16 +6,19 @@
 //
 
 import UIKit
+import MapKit
 
 class FinderViewController: UIViewController {
 
+    @IBOutlet weak var mainMapView:
+        MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        title = "Finder"
+        let initialLocation = CLLocation(latitude: 55.6962383, longitude: 37.2989158)
+        mainMapView.centerToLocation(initialLocation)
     }
-    
-
     /*
     // MARK: - Navigation
 
@@ -26,4 +29,17 @@ class FinderViewController: UIViewController {
     }
     */
 
+}
+
+private extension MKMapView {
+  func centerToLocation(
+    _ location: CLLocation,
+    regionRadius: CLLocationDistance = 1000
+  ) {
+    let coordinateRegion = MKCoordinateRegion(
+      center: location.coordinate,
+      latitudinalMeters: regionRadius,
+      longitudinalMeters: regionRadius)
+    setRegion(coordinateRegion, animated: true)
+  }
 }

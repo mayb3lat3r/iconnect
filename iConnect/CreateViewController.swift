@@ -9,10 +9,16 @@ import UIKit
 
 class CreateViewController: UIViewController {
 
+    @IBOutlet weak var avatarIEventImageView:
+        UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        title = "Create"
+        
+        avatarIEventImageView.layer.cornerRadius = 40
     }
     
 
