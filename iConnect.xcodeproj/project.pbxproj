@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,9 @@
 		04E4BC8E25432EF000AD7D4A /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4BC8D25432EF000AD7D4A /* FilterViewController.swift */; };
 		04E4BC9125432F0F00AD7D4A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4BC9025432F0F00AD7D4A /* ProfileViewController.swift */; };
 		04E4BC95254331B200AD7D4A /* FinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4BC94254331B200AD7D4A /* FinderViewController.swift */; };
+		04F9AD14254C784B007832B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04F9AD13254C784B007832B6 /* GoogleService-Info.plist */; };
+		04F9AD17254C8C6D007832B6 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9AD16254C8C6D007832B6 /* AuthViewController.swift */; };
+		2323CC0ED67F7D410819D6C5 /* Pods_iConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADBD1653916715828FCADB8 /* Pods_iConnect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,11 @@
 		04E4BC8D25432EF000AD7D4A /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		04E4BC9025432F0F00AD7D4A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		04E4BC94254331B200AD7D4A /* FinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderViewController.swift; sourceTree = "<group>"; };
+		04F9AD13254C784B007832B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		04F9AD16254C8C6D007832B6 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		0ADBD1653916715828FCADB8 /* Pods_iConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E989CF9541C7226C88C81A3 /* Pods-iConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iConnect.debug.xcconfig"; path = "Target Support Files/Pods-iConnect/Pods-iConnect.debug.xcconfig"; sourceTree = "<group>"; };
+		642640EA42F1DF2DFDED81AC /* Pods-iConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iConnect.release.xcconfig"; path = "Target Support Files/Pods-iConnect/Pods-iConnect.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2323CC0ED67F7D410819D6C5 /* Pods_iConnect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +61,8 @@
 			children = (
 				04A031662541E04A00CE3D3E /* iConnect */,
 				04A031652541E04A00CE3D3E /* Products */,
+				4ABF2D83782914A697661844 /* Pods */,
+				6EE972FA8186A990F24D9A2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,17 +80,36 @@
 				04A031672541E04A00CE3D3E /* AppDelegate.swift */,
 				04A031692541E04A00CE3D3E /* SceneDelegate.swift */,
 				04A0316B2541E04A00CE3D3E /* ViewController.swift */,
-				04A0316D2541E04A00CE3D3E /* Main.storyboard */,
+				04F9AD16254C8C6D007832B6 /* AuthViewController.swift */,
 				04E4BC94254331B200AD7D4A /* FinderViewController.swift */,
 				04E4BC9025432F0F00AD7D4A /* ProfileViewController.swift */,
 				04E4BC8D25432EF000AD7D4A /* FilterViewController.swift */,
 				04E4BC8825432E6200AD7D4A /* EventsViewController.swift */,
 				04E4BC8525432E2A00AD7D4A /* CreateViewController.swift */,
-				04A031702541E04C00CE3D3E /* Assets.xcassets */,
+				04A0316D2541E04A00CE3D3E /* Main.storyboard */,
 				04A031722541E04C00CE3D3E /* LaunchScreen.storyboard */,
 				04A031752541E04C00CE3D3E /* Info.plist */,
+				04F9AD13254C784B007832B6 /* GoogleService-Info.plist */,
+				04A031702541E04C00CE3D3E /* Assets.xcassets */,
 			);
 			path = iConnect;
+			sourceTree = "<group>";
+		};
+		4ABF2D83782914A697661844 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E989CF9541C7226C88C81A3 /* Pods-iConnect.debug.xcconfig */,
+				642640EA42F1DF2DFDED81AC /* Pods-iConnect.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6EE972FA8186A990F24D9A2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0ADBD1653916715828FCADB8 /* Pods_iConnect.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04A031782541E04D00CE3D3E /* Build configuration list for PBXNativeTarget "iConnect" */;
 			buildPhases = (
+				63E727552494E3E8F07D3A1B /* [CP] Check Pods Manifest.lock */,
 				04A031602541E04A00CE3D3E /* Sources */,
 				04A031612541E04A00CE3D3E /* Frameworks */,
 				04A031622541E04A00CE3D3E /* Resources */,
+				0E8671B395B7146CABB92085 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,12 +172,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A031742541E04C00CE3D3E /* LaunchScreen.storyboard in Resources */,
+				04F9AD14254C784B007832B6 /* GoogleService-Info.plist in Resources */,
 				04A031712541E04C00CE3D3E /* Assets.xcassets in Resources */,
 				04A0316F2541E04A00CE3D3E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E8671B395B7146CABB92085 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iConnect/Pods-iConnect-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iConnect/Pods-iConnect-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iConnect/Pods-iConnect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63E727552494E3E8F07D3A1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iConnect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04A031602541E04A00CE3D3E /* Sources */ = {
@@ -159,6 +234,7 @@
 				04E4BC95254331B200AD7D4A /* FinderViewController.swift in Sources */,
 				04A031682541E04A00CE3D3E /* AppDelegate.swift in Sources */,
 				04A0316A2541E04A00CE3D3E /* SceneDelegate.swift in Sources */,
+				04F9AD17254C8C6D007832B6 /* AuthViewController.swift in Sources */,
 				04E4BC9125432F0F00AD7D4A /* ProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +379,7 @@
 		};
 		04A031792541E04D00CE3D3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E989CF9541C7226C88C81A3 /* Pods-iConnect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +398,7 @@
 		};
 		04A0317A2541E04D00CE3D3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 642640EA42F1DF2DFDED81AC /* Pods-iConnect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
