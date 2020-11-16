@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045135772563035A004C3030 /* bg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 045135752562FCBE004C3030 /* bg.mp4 */; };
+		0451357A256307DA004C3030 /* bg2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 04513579256307D7004C3030 /* bg2.mp4 */; };
 		045610B5256256C500D290DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045610B4256256C500D290DA /* LoginViewController.swift */; };
 		045610B9256256DF00D290DA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045610B8256256DF00D290DA /* SignUpViewController.swift */; };
 		045610BC256270B400D290DA /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045610BB256270B400D290DA /* Utilities.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045135752562FCBE004C3030 /* bg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg.mp4; sourceTree = "<group>"; };
+		04513579256307D7004C3030 /* bg2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg2.mp4; sourceTree = "<group>"; };
 		045610B4256256C500D290DA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		045610B8256256DF00D290DA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		045610BB256270B400D290DA /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -89,6 +93,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		0481965C2562F49A0025A518 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				04513579256307D7004C3030 /* bg2.mp4 */,
+				045135752562FCBE004C3030 /* bg.mp4 */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
 		04A0315B2541E04A00CE3D3E = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +123,7 @@
 		04A031662541E04A00CE3D3E /* iConnect */ = {
 			isa = PBXGroup;
 			children = (
+				0481965C2562F49A0025A518 /* Media */,
 				04A031672541E04A00CE3D3E /* AppDelegate.swift */,
 				04A031692541E04A00CE3D3E /* SceneDelegate.swift */,
 				045610BE2562746C00D290DA /* Helpers */,
@@ -199,8 +213,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045135772563035A004C3030 /* bg.mp4 in Resources */,
 				04A031742541E04C00CE3D3E /* LaunchScreen.storyboard in Resources */,
 				04F9AD14254C784B007832B6 /* GoogleService-Info.plist in Resources */,
+				0451357A256307DA004C3030 /* bg2.mp4 in Resources */,
 				04A031712541E04C00CE3D3E /* Assets.xcassets in Resources */,
 				04A0316F2541E04A00CE3D3E /* Main.storyboard in Resources */,
 			);
