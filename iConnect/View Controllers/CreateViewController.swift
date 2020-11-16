@@ -17,8 +17,6 @@ class CreateViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         title = "Create"
-        
-        avatarIEventImageView.layer.cornerRadius = 40
     }
     
 

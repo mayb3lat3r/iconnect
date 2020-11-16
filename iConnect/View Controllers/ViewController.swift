@@ -11,15 +11,19 @@ import FirebaseDatabase
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // это ссылка на какую-либо позицию в базе данных
-        Database.database().reference().setValue(10)
-        
-        title = "EXAMPLE"
+        setUpElements()
     }
 
+    func setUpElements() {
+        Utilities.styleFieldButton(signUpButton)
+        Utilities.styleHollowButton(loginButton)
+    }
 
 }
 

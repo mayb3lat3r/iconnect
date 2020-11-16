@@ -11,7 +11,7 @@
         <!--Title-->
         <scene sceneID="1rr-3s-EqS">
             <objects>
-                <viewController id="uTx-mZ-Oxo" customClass="FinderViewController" customModule="iConnect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="uTx-mZ-Oxo" customClass="FinderViewController" customModule="iConnect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SO7-4K-Z3b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -278,7 +278,7 @@
         <!--Navigate-->
         <scene sceneID="FlE-lH-e5V">
             <objects>
-                <navigationController storyboardIdentifier="HomeVC" automaticallyAdjustsScrollViewInsets="NO" id="c2Z-GS-juV" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c2Z-GS-juV" customClass="FinderNavigationController" customModule="iConnect" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Navigate" image="location.circle.fill" catalog="system" id="yYK-Kx-qcx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="S1T-D2-ijg">
