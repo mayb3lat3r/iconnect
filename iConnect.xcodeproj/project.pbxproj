@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045610B5256256C500D290DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045610B4256256C500D290DA /* LoginViewController.swift */; };
+		045610B9256256DF00D290DA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045610B8256256DF00D290DA /* SignUpViewController.swift */; };
+		045610BC256270B400D290DA /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045610BB256270B400D290DA /* Utilities.swift */; };
+		048196212562BB070025A518 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048196202562BB070025A518 /* Constants.swift */; };
+		048196322562DE370025A518 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048196312562DE370025A518 /* HomeViewController.swift */; };
 		04A031682541E04A00CE3D3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A031672541E04A00CE3D3E /* AppDelegate.swift */; };
 		04A0316A2541E04A00CE3D3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A031692541E04A00CE3D3E /* SceneDelegate.swift */; };
 		04A0316C2541E04A00CE3D3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0316B2541E04A00CE3D3E /* ViewController.swift */; };
@@ -19,11 +24,15 @@
 		04E4BC9125432F0F00AD7D4A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4BC9025432F0F00AD7D4A /* ProfileViewController.swift */; };
 		04E4BC95254331B200AD7D4A /* FinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E4BC94254331B200AD7D4A /* FinderViewController.swift */; };
 		04F9AD14254C784B007832B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04F9AD13254C784B007832B6 /* GoogleService-Info.plist */; };
-		04F9AD17254C8C6D007832B6 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9AD16254C8C6D007832B6 /* AuthViewController.swift */; };
 		2323CC0ED67F7D410819D6C5 /* Pods_iConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADBD1653916715828FCADB8 /* Pods_iConnect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045610B4256256C500D290DA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		045610B8256256DF00D290DA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		045610BB256270B400D290DA /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		048196202562BB070025A518 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		048196312562DE370025A518 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		04A031642541E04A00CE3D3E /* iConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A031672541E04A00CE3D3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04A031692541E04A00CE3D3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +47,6 @@
 		04E4BC9025432F0F00AD7D4A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		04E4BC94254331B200AD7D4A /* FinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderViewController.swift; sourceTree = "<group>"; };
 		04F9AD13254C784B007832B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
-		04F9AD16254C8C6D007832B6 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		0ADBD1653916715828FCADB8 /* Pods_iConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E989CF9541C7226C88C81A3 /* Pods-iConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iConnect.debug.xcconfig"; path = "Target Support Files/Pods-iConnect/Pods-iConnect.debug.xcconfig"; sourceTree = "<group>"; };
 		642640EA42F1DF2DFDED81AC /* Pods-iConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iConnect.release.xcconfig"; path = "Target Support Files/Pods-iConnect/Pods-iConnect.release.xcconfig"; sourceTree = "<group>"; };
@@ -56,6 +64,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041710A52550456E000F93BA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				04A0316B2541E04A00CE3D3E /* ViewController.swift */,
+				045610B8256256DF00D290DA /* SignUpViewController.swift */,
+				045610B4256256C500D290DA /* LoginViewController.swift */,
+				04E4BC94254331B200AD7D4A /* FinderViewController.swift */,
+				04E4BC9025432F0F00AD7D4A /* ProfileViewController.swift */,
+				04E4BC8D25432EF000AD7D4A /* FilterViewController.swift */,
+				04E4BC8825432E6200AD7D4A /* EventsViewController.swift */,
+				04E4BC8525432E2A00AD7D4A /* CreateViewController.swift */,
+				048196312562DE370025A518 /* HomeViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		045610BE2562746C00D290DA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				045610BB256270B400D290DA /* Utilities.swift */,
+				048196202562BB070025A518 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		04A0315B2541E04A00CE3D3E = {
 			isa = PBXGroup;
 			children = (
@@ -79,15 +112,10 @@
 			children = (
 				04A031672541E04A00CE3D3E /* AppDelegate.swift */,
 				04A031692541E04A00CE3D3E /* SceneDelegate.swift */,
-				04A0316B2541E04A00CE3D3E /* ViewController.swift */,
-				04F9AD16254C8C6D007832B6 /* AuthViewController.swift */,
-				04E4BC94254331B200AD7D4A /* FinderViewController.swift */,
-				04E4BC9025432F0F00AD7D4A /* ProfileViewController.swift */,
-				04E4BC8D25432EF000AD7D4A /* FilterViewController.swift */,
-				04E4BC8825432E6200AD7D4A /* EventsViewController.swift */,
-				04E4BC8525432E2A00AD7D4A /* CreateViewController.swift */,
-				04A0316D2541E04A00CE3D3E /* Main.storyboard */,
+				045610BE2562746C00D290DA /* Helpers */,
+				041710A52550456E000F93BA /* View Controllers */,
 				04A031722541E04C00CE3D3E /* LaunchScreen.storyboard */,
+				04A0316D2541E04A00CE3D3E /* Main.storyboard */,
 				04A031752541E04C00CE3D3E /* Info.plist */,
 				04F9AD13254C784B007832B6 /* GoogleService-Info.plist */,
 				04A031702541E04C00CE3D3E /* Assets.xcassets */,
@@ -229,13 +257,17 @@
 			files = (
 				04E4BC8E25432EF000AD7D4A /* FilterViewController.swift in Sources */,
 				04E4BC8925432E6200AD7D4A /* EventsViewController.swift in Sources */,
+				045610BC256270B400D290DA /* Utilities.swift in Sources */,
 				04A0316C2541E04A00CE3D3E /* ViewController.swift in Sources */,
 				04E4BC8625432E2A00AD7D4A /* CreateViewController.swift in Sources */,
+				048196322562DE370025A518 /* HomeViewController.swift in Sources */,
+				045610B9256256DF00D290DA /* SignUpViewController.swift in Sources */,
 				04E4BC95254331B200AD7D4A /* FinderViewController.swift in Sources */,
 				04A031682541E04A00CE3D3E /* AppDelegate.swift in Sources */,
 				04A0316A2541E04A00CE3D3E /* SceneDelegate.swift in Sources */,
-				04F9AD17254C8C6D007832B6 /* AuthViewController.swift in Sources */,
+				045610B5256256C500D290DA /* LoginViewController.swift in Sources */,
 				04E4BC9125432F0F00AD7D4A /* ProfileViewController.swift in Sources */,
+				048196212562BB070025A518 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
