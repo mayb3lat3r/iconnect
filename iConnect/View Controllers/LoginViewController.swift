@@ -56,7 +56,7 @@ class LoginViewController: UIViewController {
                 self.errorLabel.alpha = 1
             }
             else {
-                let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewConroller) as? FinderViewController
+                let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewConroller) as? UITabBarController
                 
                 self.view.window?.rootViewController = homeViewController
                 self.view.window?.makeKeyAndVisible()
