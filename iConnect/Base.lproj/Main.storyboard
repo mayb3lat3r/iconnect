@@ -25,9 +25,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="05G-FX-qrv" colorLabel="IBBuiltInLabel-Gray">
-                        <barButtonItem key="leftBarButtonItem" image="gearshape" catalog="system" id="tO2-2e-ccT">
+                        <barButtonItem key="leftBarButtonItem" image="slider.horizontal.3" catalog="system" id="QW4-6W-aFG">
                             <connections>
-                                <segue destination="y8S-Xw-Mfy" kind="modal" id="eMN-m6-Htc"/>
+                                <segue destination="y8S-Xw-Mfy" kind="presentation" id="0Sp-j8-lJw"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="person.circle" catalog="system" id="myV-ZE-BQ7">
@@ -62,14 +62,14 @@
                                         </constraints>
                                         <state key="normal" title="SIgn Up"/>
                                         <connections>
-                                            <segue destination="ni4-HQ-gfu" kind="presentation" id="pT5-yP-V0L"/>
+                                            <segue destination="ni4-HQ-gfu" kind="modal" id="HGr-ah-QNm"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf8-CC-sEb">
                                         <rect key="frame" x="0.0" y="60" width="334" height="40"/>
                                         <state key="normal" title="Login"/>
                                         <connections>
-                                            <segue destination="VTu-oG-7Zn" kind="presentation" id="IYO-qd-oDU"/>
+                                            <segue destination="VTu-oG-7Zn" kind="modal" id="rIw-u4-Zs2"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -469,11 +469,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="location.circle.fill" catalog="system" width="128" height="121"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="pin.circle.fill" catalog="system" width="128" height="121"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="slider.horizontal.3" catalog="system" width="128" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

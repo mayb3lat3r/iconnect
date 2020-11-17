@@ -12,15 +12,15 @@ import AVKit
 class ViewController: UIViewController {
     
     var videoPlayer:AVPlayer?
-    
+    private var looper: AVPlayerLooper?
     var videoPlayerLayer:AVPlayerLayer?
     
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         
+        super.viewDidLoad()
         setUpElements()
     }
     
@@ -31,6 +31,8 @@ class ViewController: UIViewController {
     }
 
     func setUpElements() {
+        
+        // Style elements
         Utilities.styleFieldButton(signUpButton)
         Utilities.styleHollowButton(loginButton)
     }
@@ -40,9 +42,7 @@ class ViewController: UIViewController {
         // Get the path to the resource in the bundle
         let bundlePath = Bundle.main.path(forResource: "bg2", ofType: "mp4")
         
-        guard bundlePath != nil else {
-            return
-        }
+        guard bundlePath != nil else { return }
         
         // Create a URL from it
         let url = URL(fileURLWithPath: bundlePath!)
@@ -55,27 +55,13 @@ class ViewController: UIViewController {
         
         // Create the layer
         videoPlayerLayer = AVPlayerLayer(player: videoPlayer!)
-        
-        // Adjust the size and frame
-//        videoPlayerLayer?.frame = CGRect(x: -self.view.frame.size.width*1.5, y: 0, width:
-//                                            self.view.frame.size.width*4, height:
-//                                            self.view.frame.size.height)
-        
-        videoPlayerLayer?.frame = CGRect(
-                                        x: -self.view.frame.size.width*1.5, y: 0,
+        videoPlayerLayer?.frame = CGRect(x: -self.view.frame.size.width*1.5, y: 0,
                                         width: self.view.frame.size.width*4,
-                                        height: self.view.frame.size.height
-                                        )
-        
-        
+                                        height: self.view.frame.size.height)
         view.layer.insertSublayer(videoPlayerLayer!, at: 0)
         
         // Add it to the view and play it
         videoPlayer?.playImmediately(atRate: 0.3)
-        
         videoPlayer!.play()
-        
     }
-    
 }
-
