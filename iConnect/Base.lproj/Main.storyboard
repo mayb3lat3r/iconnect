@@ -11,7 +11,7 @@
         <!--Title-->
         <scene sceneID="1rr-3s-EqS">
             <objects>
-                <viewController storyboardIdentifier="HomeVC" id="uTx-mZ-Oxo" customClass="FinderViewController" customModule="iConnect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uTx-mZ-Oxo" customClass="FinderViewController" customModule="iConnect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SO7-4K-Z3b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -241,7 +241,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="jon-hn-qlB">
             <objects>
-                <tabBarController id="ChC-X4-ZsP" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeVC" id="ChC-X4-ZsP" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="biy-Gn-GNW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
