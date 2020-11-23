@@ -13,22 +13,72 @@ class FinderViewController: UIViewController {
     @IBOutlet weak var mainMapView:
         MKMapView!
     
+    let locationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Finder"
         let initialLocation = CLLocation(latitude: 55.6962383, longitude: 37.2989158)
-        mainMapView.centerToLocation(initialLocation)
+        //MKMapView.centerToLocation(initialLocation)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        checkLocationEnbled()
+        checkAutorization(locationManager)
     }
-    */
+    
+    func checkLocationEnbled(){
+        if CLLocationManager.locationServicesEnabled(){
+            setupManager()
+        }else{
+            showAlert(title: "Turn on geolocation", message: "Want to enable?", url: URL (string: "App-prefs:root=LOCATION_SERVICES"))
+        }
+    }
+    
+    func setupManager(){
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+    }
+    
+    func checkAutorization(_ manager: CLLocationManager){
+        let accuracyAuthorization = manager.accuracyAuthorization
+            switch accuracyAuthorization {
+            case .fullAccuracy:
+            break
+            case .reducedAccuracy:
+                showAlert(title: "No premises for geolocation", message: "want to enable?", url: URL(string: UIApplication.openSettingsURLString))
+                break
+            default:
+                break
+            }
+    }
+    
+    func showAlert(title:String,message:String?,url:URL?){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let settingsAction = UIAlertAction(title: "Settings", style: .default) { (alert) in
+            if let url = url{
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alert.addAction(settingsAction)
+        alert.addAction(cancelAction)
+        
+        present(alert, animated: true, completion: nil)
+    }
+   
+}
 
+extension FinderViewController:CLLocationManagerDelegate{
+//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
+//        if let location = locations.last?.coordinate{
+//            let region = MKCoordinateRegion(center: location, latitudinalMeters: 50, longitudinalMeters: 50)
+//            mainMapView.setRegion(region, animated: true)
+//        }
+//    }
 }
 
 private extension MKMapView {
@@ -43,3 +93,4 @@ private extension MKMapView {
     setRegion(coordinateRegion, animated: true)
   }
 }
+
