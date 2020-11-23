@@ -93,6 +93,37 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		048093D7256BEA210030A2DB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				048093D8256BEA2C0030A2DB /* Auth */,
+				048093D9256BEA3D0030A2DB /* MainTabBar */,
+				048093DA256BEA5C0030A2DB /* Finder */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		048093D8256BEA2C0030A2DB /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		048093D9256BEA3D0030A2DB /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		048093DA256BEA5C0030A2DB /* Finder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Finder;
+			sourceTree = "<group>";
+		};
 		0481965C2562F49A0025A518 /* Media */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +154,7 @@
 		04A031662541E04A00CE3D3E /* iConnect */ = {
 			isa = PBXGroup;
 			children = (
+				048093D7256BEA210030A2DB /* Scenes */,
 				0481965C2562F49A0025A518 /* Media */,
 				04A031672541E04A00CE3D3E /* AppDelegate.swift */,
 				04A031692541E04A00CE3D3E /* SceneDelegate.swift */,

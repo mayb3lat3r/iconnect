@@ -8,7 +8,10 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-
+    
+    @IBAction func logOutButton(_ sender: UIButton) {
+        logout()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,15 +19,12 @@ class ProfileViewController: UIViewController {
         title = "Profile"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // log out function
+    func logout () {
+        let startViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.startViewController) as? UIViewController
+        
+        view.window?.rootViewController = startViewController
+        view.window?.makeKeyAndVisible()
     }
-    */
 
 }

@@ -47,7 +47,8 @@
         <!--View Controller-->
         <scene sceneID="Wiv-EB-Fm6">
             <objects>
-                <viewController id="HXq-hC-FlC" customClass="ViewController" customModule="iConnect" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3fY-Vd-y8S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="StartVC" id="HXq-hC-FlC" customClass="ViewController" customModule="iConnect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RXz-ZL-eAc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,13 +93,13 @@
                         <outlet property="signUpButton" destination="4rw-dh-J6M" id="Iam-GC-4Po"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3fY-Vd-y8S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1314" y="242"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Kmy-Bu-Ogg">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EUv-gm-bYj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="VTu-oG-7Zn" customClass="LoginViewController" customModule="iConnect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HLf-xe-Jue">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -156,13 +157,13 @@
                         <outlet property="passwordTextField" destination="bUf-vv-AdW" id="kTa-Ut-4ea"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EUv-gm-bYj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-387" y="602"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="Ilf-WV-M98">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t2F-eg-7Zr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="ni4-HQ-gfu" customClass="SignUpViewController" customModule="iConnect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aeP-7J-zAb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -234,7 +235,6 @@
                         <outlet property="signUpTButton" destination="s6Y-oR-ad5" id="Wo4-J3-CFg"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t2F-eg-7Zr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-388" y="-95"/>
         </scene>
@@ -365,8 +365,23 @@
                     <view key="view" contentMode="scaleToFill" id="lIt-ck-4vS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRz-7T-CzB">
+                                <rect key="frame" x="181" y="778" width="52" height="30"/>
+                                <state key="normal" title="Log out">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOutButton:" destination="HRp-PG-fSH" eventType="touchUpInside" id="eae-sy-ju0"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="anb-Wk-lNz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VRz-7T-CzB" firstAttribute="bottom" secondItem="anb-Wk-lNz" secondAttribute="bottom" id="E7R-c4-4k1"/>
+                            <constraint firstItem="VRz-7T-CzB" firstAttribute="centerX" secondItem="lIt-ck-4vS" secondAttribute="centerX" id="MjS-If-Sje"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="50y-12-Rcm">
                         <barButtonItem key="rightBarButtonItem" title="Edit" id="Ynh-y7-Efu"/>
@@ -453,6 +468,7 @@
         <!--Navigation Controller-->
         <scene sceneID="gMt-Cq-3p5">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="37C-cL-M94" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="XtT-2q-V2D" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NC7-fa-P6g">
@@ -463,7 +479,6 @@
                         <segue destination="HXq-hC-FlC" kind="relationship" relationship="rootViewController" id="xeB-CN-YSg"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="37C-cL-M94" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2258" y="242"/>
         </scene>
